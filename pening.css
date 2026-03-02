@@ -1,0 +1,125 @@
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Font modern agar tidak kaku */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0598fa; /* Warna biru sesuai keinginan Anda */
+  color: #333;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Utama */
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* PETAK UTAMA (Membungkus semua section) */
+main {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px; /* Lebar petak */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Setiap Section di dalam Petak */
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; /* Garis pembatas antar konten */
+}
+
+section:last-of-type {
+  border-bottom: none; /* Menghilangkan garis di section terakhir */
+}
+
+section h2 {
+  color: #5b05d4;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-left: 5px solid #5b05d4;
+  padding-left: 10px;
+}
+
+/* Foto Profil Modern */
+img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat foto bulat */
+  display: block;
+  margin: 10px auto;
+  border: 5px solid #f0f0f0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+section p {
+  text-align: center; /* Khusus untuk caption foto profil */
+  margin-bottom: 10px;
+}
+
+/* Perbaikan teks paragraf agar rata kiri-kanan */
+section p:not(:first-of-type) {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Lists (Biodata, Hobi, Pendidikan) */
+ul,
+ol {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #6b05fa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+}
+
+footer hr {
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
